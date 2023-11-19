@@ -20,5 +20,9 @@ println(System.getProperty("user.dir"));
 */
 //val curDir = System.getProperty("user.dir");
 val snowflakeConf = ConfigSource.default.at("rcoe_demo_azure").load[snowflakeConfig];
-printf("%s\n%s\n%s\n%s\n%05d\n".format(snowflakeConf, snowflakeConf.right.get.account, snowflakeConf.right.get.username, snowflakeConf.right.get.database, rand.nextInt(99999)));
+printf("%s\n%s\n%s\n%s\n%05d\n".format(snowflakeConf
+                                , snowflakeConf.right.get.account
+                                , snowflakeConf.right.get.username
+                                , snowflakeConf.right.get.database
+                                , rand.nextInt(99999)));
 }
