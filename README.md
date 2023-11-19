@@ -14,6 +14,7 @@ snowflakeConfig (
     warehouse: String
 )
 ```
+You will also need to have a folder called: _output in the same location in which you are running the gen-data class.  CSV files generated are placed into that directory with a current time stamp.
 
 # Background
 
